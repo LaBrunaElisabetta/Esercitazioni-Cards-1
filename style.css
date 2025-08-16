@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(30, 30, 34); /* colore di sfondo scuro */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* font leggibile */
+  margin: 0;
+  padding: 0;
+}
+
+/* ================== HEADER ================== */
+header h1 {
+    color: aquamarine;   /* titolo evidenziato */
+    text-align: center;  /* centrato */
+    margin-top: 3rem;    /* margine sopra */
+}
+
+/* ================== SEZIONE CARDS ================== */
+section {
+  display: flex;                 /* flexbox per disporre le card una accanto all'altra */
+  justify-content: space-between;/* spaziatura tra le card */
+  flex-wrap: wrap;               /* se non ci sta nello schermo, le card vanno a capo */
+  padding: 70px;                 /* spazio interno al contenitore */
+  align-items: center;           /* centra le card verticalmente */
+  gap: 2rem;                     /* spazio fra una card e l'altra */
+}
+
+/* ================== CARD BASE ================== */
+.card {
+  background-color: rgb(56, 56, 65); /* colore di sfondo scuro */
+  border-radius: 8px;               /* angoli arrotondati */
+  display: flex;                    /* flexbox per disporre i contenuti dentro */
+  flex-direction: column;           /* disposizione in colonna (img, titolo, testo, link) */
+  align-items: center;              /* centra orizzontalmente */
+  padding: 30px;                    /* spazio interno */
+  width: 300px;
+  height: 400px;
+  color: white;                     /* testo bianco */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* leggero ingrandimento al passaggio del mouse */
+}
+
+.card img{
+  width: 150px;
+  height: 120px;
+}
+
+.card h2 {
+    color: white;
+    margin: 1rem 0;
+}
+
+.card p {
+    color: white;
+    font-size: 1.3rem;
+    flex-grow: 1;
+}
+
+
+.bottoni {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 2px solid #00ffcc; 
+  border-radius: 6px;
+  background-color: transparent;
+  color: #00ffcc;
+  text-decoration: none; 
+  font-weight: bold;
+  transition: all 0.3s ease;
+  line-height: 1.8rem;
+}
+
+.bottoni:hover {
+  background-color: white;
+  color: rgb(65, 179, 124);
+}
