@@ -1,44 +1,43 @@
 body {
-  background-color: rgb(30, 30, 34); /* colore di sfondo scuro */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* font leggibile */
+  background-color: rgb(30, 30, 34); 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
   margin: 0;
   padding: 0;
 }
 
-/* ================== HEADER ================== */
 header h1 {
-    color: aquamarine;   /* titolo evidenziato */
-    text-align: center;  /* centrato */
-    margin-top: 3rem;    /* margine sopra */
+    color: aquamarine;   
+    text-align: center;  
+    margin-top: 3rem;   
 }
 
-/* ================== SEZIONE CARDS ================== */
+
 section {
-  display: flex;                 /* flexbox per disporre le card una accanto all'altra */
-  justify-content: space-between;/* spaziatura tra le card */
-  flex-wrap: wrap;               /* se non ci sta nello schermo, le card vanno a capo */
-  padding: 70px;                 /* spazio interno al contenitore */
-  align-items: center;           /* centra le card verticalmente */
-  gap: 2rem;                     /* spazio fra una card e l'altra */
+  display: flex;                 
+  justify-content: space-between;
+  flex-wrap: wrap;               
+  padding: 70px;                 
+  align-items: center;           
+  gap: 2rem;                     
 }
 
-/* ================== CARD BASE ================== */
+
 .card {
-  background-color: rgb(56, 56, 65); /* colore di sfondo scuro */
-  border-radius: 8px;               /* angoli arrotondati */
-  display: flex;                    /* flexbox per disporre i contenuti dentro */
-  flex-direction: column;           /* disposizione in colonna (img, titolo, testo, link) */
-  align-items: center;              /* centra orizzontalmente */
-  padding: 30px;                    /* spazio interno */
+  background-color: rgb(56, 56, 65); 
+  border-radius: 8px;               
+  display: flex;                    
+  flex-direction: column;           
+  align-items: center;              
+  padding: 30px;                    
   width: 300px;
   height: 400px;
-  color: white;                     /* testo bianco */
+  color: white;                     
   text-align: center;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05); /* leggero ingrandimento al passaggio del mouse */
+  transform: scale(1.05); /
 }
 
 .card img{
